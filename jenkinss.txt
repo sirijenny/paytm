@@ -1,0 +1,136 @@
+GIT:
+
+1. What is git?
+Git is nothing but Global Information Tracker.
+Git is also called as version control system and source code management. 
+It is used to track the files.
+It will maintain the multiple versions of the same file.
+Git is free and open source.
+
+2. What are git stages?
+
+There are 3 stages in git which is
+1. Working directory
+2. Staging areas
+3. Repository
+
+Working directory:  in this stage we can create a files for our project.
+
+Staging area: it is nothing but a rough draft space
+We can modified file in its current version to go into your next commit snapshot.
+We can track the files in staging area.
+
+Repository: it is nothing but out project folder, when we commit the file it will store on repository.
+the data is safely stored in your local database. 
+
+We have 3 types of repositories
+1. Local
+2. Remote
+3. Central
+
+
+3. How to track a file in git?
+To track a file, we use a command “git add filename”
+Once we add, it will gets started tracking 
+So that we can know the every modification on the file
+
+4. How to commit the file?
+To commit a file we use a command called “git commit -m “message” file_name
+Once we commit the file it will safely stored in local database.
+
+5. What is git status?
+Git status is used to know the tracking and untacking files in our server.
+
+6. What is git logs?
+Git log is a history, we can see the list of every commit in our project along some other information like who commit the file and when we commit the file.
+
+7. How to configure in git
+Git config user.name “name”
+Git confit user.email “name@gmail.com”
+
+8. What is git merge?
+It allows us to get the code from one branch to another. This is useful when developers work on the same code and want to integrate their changes before pushing them up in a branch.
+
+Command: git merge branch_name
+
+9. What is merge conflicts?
+Merge conflicts happen when you merge branches that have competing commits, and Git needs your help to decide which changes to incorporate in the final merge.
+
+10. What is git diff?
+It is used to show all the differences between any two commits or files within your Git repository.
+
+11. What is git push?
+Git push is used to share the local files into central repositories like GitHub and Bitbucket.
+
+12. What is git stash?
+It is used to save your changes but not record them in the Git repository.
+
+13. What is git clone?
+Git clone is used to get the repository from central to local.
+
+14. What is Git checkout?
+Git checkout is used to switch the branches 
+
+Command: git checkout branch_name
+
+15. What is git rm?
+Git rm is used to untrack the files
+
+    16. Difference b/w git and GitHub?
+Git is a software	GitHub is a service
+Git can be installed locally on the system	GitHub is hosted on the web
+Git has 3 types of repositories 	GitHub has 2 types of repositories 
+Git has a default branch called master	GitHub has a default branch called main
+
+
+17. What is git pull?
+Git pull is the combination of git fetch and git merger
+Git pull is used to get the commits from central repo to local repo
+
+Command: git pull origin branch
+
+18. Git fetch vs pull
+
+Git Fetch	Git Pull
+The Git fetch command only downloads new data from a remote repository.	Git pull updates the current HEAD branch with the latest changes from the remote server.
+It does not integrate any of these new data into your working files.	Downloads new data and integrate it with the current working files.
+Command - git fetch origin
+git fetch --all	Tries to merge remote changes with your local ones.
+Command - git pull origin master
+
+19. How to resolve the git conflicts?
+* Open the file in vi editor and remove the conflict messages.
+* Save the file
+* Add the files using the git add command.
+* The last step is to commit the changes in the file.
+
+20. What is git tag?
+Tagging is generally used to capture a point in history that is used for a marked version release.
+
+21. How to change the commit message
+git commit —amend commit_id
+
+22. What is git fork?
+Git fork is used to get the repositories from another account
+
+23. What is cherry-pick?
+Cherry-pick is used to get a particular file from another branch 
+command: git cherry-pick commit_id
+
+24. What is git branch?
+A branch is a way to isolate development work on a particular aspect of a project.
+
+25. What is git blame?
+It is used to see the history of the GitHub file.
+
+
+Git reset commit_id : deletes the commits 
+git log --graph --oneline --all : see all the history in graph
+git merge --abort	:	cancel the conflicts in commits
+git remote show origin	:	used to see the branches in GitHub
+git log origin/main	:	history of the GitHub
+git push --delete origin mustafa	:	delete the branch on GitHub
+Git branch -m old new	:	to change the branch name
+
+
+
